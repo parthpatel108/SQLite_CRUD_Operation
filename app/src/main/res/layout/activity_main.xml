@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="demo.parth_dev.parth.com.practical_35b.MainActivity">
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter id"
+        android:inputType="textPersonName"
+         />
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Show"
+        android:layout_marginStart="47dp"
+        android:layout_below="@+id/id"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_show"
+        android:layout_marginTop="35dp"
+        android:layout_alignStart="@+id/btn_show"
+        android:layout_alignEnd="@+id/btn_delete" />
+
+    <Button
+        android:id="@+id/btn_u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_alignBaseline="@+id/btn_delete"
+        android:layout_alignBottom="@+id/btn_delete"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:text="Delete"
+        android:layout_above="@+id/result"
+        android:layout_toEndOf="@+id/btn_u" />
+</RelativeLayout>
